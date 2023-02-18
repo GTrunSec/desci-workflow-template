@@ -1,0 +1,6 @@
+
+# nixago: ignore-linked-files
+treefmt.toml
+
+/.std
+publish

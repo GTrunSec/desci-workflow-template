@@ -1,0 +1,26 @@
+:PROPERTIES:
+:ID:       72f9cbad-3259-4ffd-a7b7-93b56860baed
+:header-args:julia: :session julia :async t :exports both
+:END:
+#+TITLE: spiffworkflow-cli
+#+AUTHOR: GuangTao Zhang
+#+EMAIL: gtrunsec@hardenedlinux.org
+#+DATE: 2023-02-15 Wed 20:57
+#+hugo_custom_front_matter: :jupyter julia-data-science
+
+
+#+begin_src jupyter-julia
+#| output: true
+
+using Kroki
+#+end_src
+
+
+#+begin_src jupyter-julia
+#| label: example-bpmn
+
+Diagram(
+  :bpmn;
+  path = joinpath(@__DIR__, "example.bpmn"),
+)
+#+end_src

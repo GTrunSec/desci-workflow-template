@@ -1,0 +1,2 @@
+[kernels.python.data-science]
+packages = ["six"]

@@ -1,0 +1,50 @@
+project:
+  type: book
+  output-dir: ./publish
+
+book:
+  title: "workflow-template"
+  language: "en"
+  author: "Guangtao Zhang"
+  reader-mode: true
+  chapters:
+    - index.qmd
+
+    - part: spiffworkflow-cli.qmd
+    #   chapters:
+    #     - sample-process-models.qmd
+    # - part: DMN.qmd
+    #   chapters:
+    #     - models.qmd
+
+    # - part: prefect.qmd
+    #   chapters:
+    #     - flow.qmd
+
+    # - part: process-compose.qmd
+    #   chapters:
+    #     - tasks.qmd
+
+    # - part: comonicon.qmd
+    #   chapters:
+    #     - tasks.qmd
+
+    # - part: cliche.qmd
+    #   chapters:
+    #     - tasks.qmd
+
+
+
+format:
+  html:
+    theme: cosmo
+    code-fold: true
+  pdf:
+    documentclass: ctexbook
+    pdf-engine: tectonic
+
+
+execute:
+  warning: false
+
+biliography: references.lib
