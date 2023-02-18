@@ -1,9 +1,23 @@
 [
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "workflow-template",
+    "section": "",
+    "text": "Getting Started"
+  },
+  {
+    "objectID": "spiffworkflow.html#spiffworkflow",
+    "href": "spiffworkflow.html#spiffworkflow",
+    "title": "spiffworkflow",
+    "section": "SpiffWorkflow",
+    "text": "SpiffWorkflow"
+  },
+  {
     "objectID": "spiffworkflow-cli.html",
     "href": "spiffworkflow-cli.html",
-    "title": "spiffworkflow-cli",
+    "title": "1  spiffworkflow-cli",
     "section": "",
-    "text": "Code\nusing Kroki\n\n\n\n\nCode\nDiagram(\n  :bpmn;\n  path = joinpath(@__DIR__, \"example.bpmn\"),\n)"
+    "text": "tags\n\n[spiffworkflow]()\n\n\n\n\n\nCode\nusing Kroki\n\n\n\n\nCode\nDiagram(\n  :bpmn;\n  path = joinpath(@__DIR__, \"example.bpmn\"),\n)"
   }
 ]
