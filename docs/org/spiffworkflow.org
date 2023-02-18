@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       6ea5c2c2-4721-4e06-8b34-bb20672fdac4
+:END:
+#+TITLE: spiffworkflow
+#+AUTHOR: GuangTao Zhang
+#+EMAIL: gtrunsec@hardenedlinux.org
+#+DATE: 2023-02-18 Sat 00:35
+
+* [[https://github.com/sartography/SpiffWorkflow][SpiffWorkflow]]

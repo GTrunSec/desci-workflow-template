@@ -8,6 +8,7 @@
 #+DATE: 2023-02-15 Wed 20:57
 #+hugo_custom_front_matter: :jupyter julia-data-science
 
+- tags :: [[id:6ea5c2c2-4721-4e06-8b34-bb20672fdac4][spiffworkflow]]
 
 #+begin_src jupyter-julia
 #| output: true

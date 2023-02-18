@@ -10,9 +10,9 @@ book:
   chapters:
     - index.qmd
 
-    - part: spiffworkflow-cli.qmd
-    #   chapters:
-    #     - sample-process-models.qmd
+    - part: spiffworkflow.qmd
+      chapters:
+        - spiffworkflow-cli.qmd
     # - part: DMN.qmd
     #   chapters:
     #     - models.qmd

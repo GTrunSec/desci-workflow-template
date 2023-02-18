@@ -33,7 +33,7 @@ in
         {
           name = "mkQuarto";
           command = ''
-          ${l.getExe inputs.desci.quarto.entrypoints.orgToQuarto} "$PRJ_ROOT"/docs/publish/content/posts
+            ${l.getExe inputs.desci.quarto.entrypoints.orgToQuarto} "$PRJ_ROOT"/docs/publish/content/posts
           '';
           help = "Build the documentation with quarto";
         }
