@@ -1,0 +1,9 @@
+[
+  {
+    "objectID": "spiffworkflow-cli.html",
+    "href": "spiffworkflow-cli.html",
+    "title": "spiffworkflow-cli",
+    "section": "",
+    "text": "Code\nusing Kroki\n\n\n\n\nCode\nDiagram(\n  :bpmn;\n  path = joinpath(@__DIR__, \"example.bpmn\"),\n)"
+  }
+]
