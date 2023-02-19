@@ -1,0 +1,17 @@
+:PROPERTIES:
+:ID:       cd26f11e-5c6a-4bdf-8ca1-0b69c253285f
+:END:
+#+TITLE: prefect-examples
+#+AUTHOR: GuangTao Zhang
+#+EMAIL: gtrunsec@hardenedlinux.org
+#+DATE: 2023-02-18 Sat 23:01
+
+
+* Sequential execution
+
+#+begin_src bash
+#| kernel: bash-data-science
+#| output: true
+
+python ../../jobs/prefect/sequential.py
+#+end_src

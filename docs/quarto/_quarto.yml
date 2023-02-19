@@ -13,6 +13,10 @@ book:
     - part: spiffworkflow.qmd
       chapters:
         - spiffworkflow-cli.qmd
+
+    - part: prefect.qmd
+      chapters:
+        - prefect-examples.qmd
     # - part: DMN.qmd
     #   chapters:
     #     - models.qmd

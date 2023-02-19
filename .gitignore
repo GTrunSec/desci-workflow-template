@@ -4,3 +4,5 @@ treefmt.toml
 
 /.std
 publish
+/docs/quarto/*.qmd
+!/docs/quarto/index.qmd
