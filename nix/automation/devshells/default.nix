@@ -21,10 +21,12 @@ in
         }
       ];
 
-      nixago = [
-        cell.nixago.treefmt
-        cell.nixago.just
-      ];
+      nixago =
+        [
+          cell.nixago.treefmt
+          cell.nixago.just
+        ]
+        ++ l.attrValues inputs.cells.python.nixago;
     };
 
     doc = {

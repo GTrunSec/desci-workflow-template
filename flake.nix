@@ -6,6 +6,7 @@
     cells-lab.follows = "desci/cells-lab";
     std.follows = "desci/std";
     std-data-collection.follows = "desci/std-data-collection";
+    dataflow2nix.follows = "desci/dataflow2nix";
   };
 
   outputs = {
