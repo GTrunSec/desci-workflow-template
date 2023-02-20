@@ -7,6 +7,7 @@
     std.follows = "desci/std";
     std-data-collection.follows = "desci/std-data-collection";
     dataflow2nix.follows = "desci/dataflow2nix";
+    # dataflow2nix.url = "/home/guangtao/ghq/github.com/GTrunSec/dataflow2nix";
   };
 
   outputs = {
@@ -25,6 +26,7 @@
         (runnables "entrypoints")
 
         (functions "lib")
+        (functions "config")
 
         (installables "packages" {ci.build = true;})
 

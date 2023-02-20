@@ -283,11 +283,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1676802063,
-        "narHash": "sha256-Q56vkhHis0BJFarbOz7wzn3JgvVLJdzQt3zT8GvBXcw=",
+        "lastModified": 1676885412,
+        "narHash": "sha256-86Jr5MLMoEnLnCwhdwTmkvZEOesl15BUraRYvu5uONc=",
         "owner": "GTrunSec",
         "repo": "dataflow2nix",
-        "rev": "6192f2ff77ab56db92a9c3699effb56ba2214acb",
+        "rev": "d1f654af6e9cc43528041e0bde3f175982ca27bd",
         "type": "github"
       },
       "original": {
@@ -302,7 +302,6 @@
         "dataflow2nix": "dataflow2nix",
         "julia2nix": "julia2nix",
         "jupyenv": "jupyenv",
-        "latest": "latest",
         "matrix-attack-data": "matrix-attack-data",
         "n2c": "n2c_5",
         "nix-nomad": "nix-nomad",
@@ -321,11 +320,11 @@
         "tullia": "tullia"
       },
       "locked": {
-        "lastModified": 1676802127,
-        "narHash": "sha256-haMR82zvrg+63hHfXZWLv3TU/3yV3oSsBRHUc3LyMS0=",
+        "lastModified": 1676885449,
+        "narHash": "sha256-I4ArqkkVzjq8h7JpcVb7jgwm0t7b68E32e4BmQz74zc=",
         "owner": "GTrunSec",
         "repo": "DeSci",
-        "rev": "e16f424c336ddb7759b3d0886d388d6c1c53df53",
+        "rev": "bba880c066cb1aa0e223a9698614ba9fbaa97189",
         "type": "github"
       },
       "original": {
@@ -1444,21 +1443,6 @@
         "owner": "gtrunsec",
         "ref": "dev",
         "repo": "jupyterWith",
-        "type": "github"
-      }
-    },
-    "latest": {
-      "locked": {
-        "lastModified": 1665946021,
-        "narHash": "sha256-XWJFqvuYLASp4+Z9DQHUigeq5oWA6t7Hj0yHdBo7xiA=",
-        "owner": "NixOS",
-        "repo": "nixpkgs",
-        "rev": "daba20d006b6e8ce061fe5e1bea1494f21ad17e7",
-        "type": "github"
-      },
-      "original": {
-        "owner": "NixOS",
-        "repo": "nixpkgs",
         "type": "github"
       }
     },

@@ -3,11 +3,14 @@ build-backend = "poetry.core.masonry.api"
 requires = ["poetry-core"]
 
 [tool.poetry]
-authors = ["GTrunSec <gtrunsec@hardenedlinux.org>"]
+authors = ["GTrunSec <gtrunsec@hardenedlinux.org>", "guangtao <gtrunsec@hardenedlinux.org>"]
 description = ""
-name = "prefect-poetry"
+name = "desci-python"
 readme = "README.md"
 version = "0.1.0"
+
+[[tool.poetry.packages]]
+include = "desci_python"
 
 [tool.poetry.dependencies]
 aiosqlite = ">=0.17.0"
@@ -64,6 +67,10 @@ version = ">=1.4.22,<2.0"
 [tool.poetry.group]
 [tool.poetry.group.aws.dependencies.prefect-aws]
 git = "https://github.com/PrefectHQ/prefect-aws"
+
+[tool.poetry.group.jupyenv.dependencies]
+ipykernel = "^6.19.4"
+ipywidgets = "^8.0.2"
 
 [tool.poetry.group.jupyter.dependencies.prefect-jupyter]
 git = "https://github.com/PrefectHQ/prefect-jupyter"
