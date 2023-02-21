@@ -17,6 +17,8 @@ book:
     - part: prefect.qmd
       chapters:
         - prefect-examples.qmd
+
+    - part: python.qmd
     # - part: DMN.qmd
     #   chapters:
     #     - models.qmd
@@ -37,8 +39,6 @@ book:
     #   chapters:
     #     - tasks.qmd
 
-
-
 format:
   html:
     theme: cosmo
@@ -46,7 +46,6 @@ format:
   pdf:
     documentclass: ctexbook
     pdf-engine: tectonic
-
 
 execute:
   warning: false
