@@ -4,11 +4,9 @@ version = "0.1.0"
 description = ""
 authors = ["guangtao <gtrunsec@hardenedlinux.org>"]
 readme = "README.md"
-packages = [{include = "workflow_template_python"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
-
 
 [tool.poetry.group.data.dependencies]
 polars = "^0.16.7"

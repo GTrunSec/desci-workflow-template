@@ -9,12 +9,6 @@ name = "desci-python"
 readme = "README.md"
 version = "0.1.0"
 
-[[tool.poetry.packages]]
-include = "workflow_template_python"
-
-[[tool.poetry.packages]]
-include = "desci_python"
-
 [tool.poetry.dependencies]
 aiosqlite = ">=0.17.0"
 alembic = ">=1.7.5"
