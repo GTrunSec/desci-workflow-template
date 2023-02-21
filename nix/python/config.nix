@@ -8,6 +8,9 @@ in {
   poetry =
     l.recursiveUpdate (cell.lib.mergePoetryEnv [
       {
+        path = ./packages;
+      }
+      {
         path = "${inputs.dataflow2nix}/nix/prefect/packages";
         overrides = false;
       }

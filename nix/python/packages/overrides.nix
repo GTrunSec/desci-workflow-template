@@ -6,4 +6,4 @@ final: prev: let
   };
 in
   {}
-  // addNativeBuildInputs "mypy-boto3-secretsmanager" [final.setuptools]
+  # // addNativeBuildInputs "mypy-boto3-secretsmanager" [final.setuptools]

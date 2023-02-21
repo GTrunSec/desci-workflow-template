@@ -2,32 +2,14 @@
   inputs,
   cell,
 }: let
+  inherit (inputs) std self;
+
   nixpkgs = inputs.dataflow2nix.prefect.lib.nixpkgs;
 in {
-  # prefect = nixpkgs.python3.withPackages (ps:
-  #   with ps; [
-  #     ((ps.pkgs.prefect.override {
-  #         overrides = [(import ./packages/overrides.nix)];
-  #       })
-  #       .overrideAttrs (old: {
-  #         groups = ["aws"];
-  #         pyproject = cell.nixago.prefectPoetry.configFile;
-  #         poetrylock = ./packages/poetry.lock;
-  #       }))
-  #   ]);
-
-  # test = (nixpkgs.prefect.override ({
-  #   overrides = [(import ./packages/overrides.nix)];
-  #   groups = ["aws"];
-  # })).overrideDerivation (old: {
-  #   pyproject = cell.nixago.prefectPoetry.configFile;
-  #   poetrylock = ./packages/poetry.lock;
-  # });
-  #
   default = nixpkgs.poetry2nix.mkPoetryEnv {
-    poetrylock = ./packages/poetry.lock;
+    poetrylock = (std.incl self [ "poetry.lock"]) + "/poetry.lock";
     pyproject = cell.nixago.pyproject.configFile;
-    groups = ["aws" "jupyenv"];
+    groups = ["aws" "jupyenv" "data"];
     preferWheels = true;
     overrides =
       # Do not add poetry2nix.overrides if you have merged other overrides;
