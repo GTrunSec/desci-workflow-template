@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="GuangTao Zhang">
-<meta name="dcterms.date" content="2023-02-15">
+<meta name="dcterms.date" content="2023-02-20">
 
-<title>workflow-template - 1&nbsp; spiffworkflow-cli</title>
+<title>workflow-template - python</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -95,8 +95,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./prefect.html" rel="next">
-<link href="./spiffworkflow.html" rel="prev">
+<link href="./prefect-examples.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -135,7 +134,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">spiffworkflow-cli</span></h1>
+      <h1 class="quarto-secondary-nav-title">python</h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -180,7 +179,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./spiffworkflow-cli.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">spiffworkflow-cli</span></a>
+  <a href="./spiffworkflow-cli.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">spiffworkflow-cli</span></a>
   </div>
 </li>
       </ul>
@@ -208,14 +207,25 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#poetry" id="toc-poetry" class="nav-link active" data-scroll-target="#poetry">Poetry</a>
+  <ul class="collapse">
+  <li><a href="#cli" id="toc-cli" class="nav-link" data-scroll-target="#cli">cli</a></li>
+  <li><a href="#configfiles" id="toc-configfiles" class="nav-link" data-scroll-target="#configfiles">configFiles</a></li>
+  </ul></li>
+  <li><a href="#nix" id="toc-nix" class="nav-link" data-scroll-target="#nix">Nix</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">spiffworkflow-cli</span></h1>
+<h1 class="title d-none d-lg-block">python</h1>
 </div>
 
 
@@ -232,7 +242,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">February 15, 2023</p>
+      <p class="date">February 20, 2023</p>
     </div>
   </div>
   
@@ -242,33 +252,73 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 </header>
 
-<dl>
-<dt>tags</dt>
-<dd>
-[spiffworkflow]()
-</dd>
-</dl>
+<section id="poetry" class="level2">
+<h2 class="anchored" data-anchor-id="poetry">Poetry</h2>
+<section id="cli" class="level3">
+<h3 class="anchored" data-anchor-id="cli">cli</h3>
+<ul>
+<li>run <strong>poetry install</strong> with full dependencies</li>
+<li><a href="https://python-poetry.org/docs/cli/" class="uri">https://python-poetry.org/docs/cli/</a></li>
+</ul>
 <!--listend-->
-<div class="cell" data-execution_count="1">
-<details>
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">using</span> <span class="bu">Kroki</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
-</div>
-<div class="cell" data-execution_count="2">
-<details>
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">Diagram</span>(</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="op">:</span>bpmn;</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  path <span class="op">=</span> <span class="fu">joinpath</span>(<span class="pp">@__DIR__</span>, <span class="st">"example.bpmn"</span>),</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
-<div class="cell-output cell-output-display" data-execution_count="3">
-<p><img src="spiffworkflow-cli_files/figure-html/example-bpmn-output-1.svg" id="example-bpmn" class="img-fluid"></p>
-</div>
-</div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">poetry</span> install <span class="at">--with</span> data</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">poetry</span> install <span class="at">--only</span> data,jupyenv</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li>then <code>poetry shell</code> to enter the python virtualEnvironment</li>
+</ul>
+</section>
+<section id="configfiles" class="level3">
+<h3 class="anchored" data-anchor-id="configfiles">configFiles</h3>
+<blockquote class="blockquote">
+<p>Dont not modify the top-level/pyproject.toml, which is generated by nix automaticlly.</p>
+</blockquote>
+<ul>
+<li><p>add your custom poetry packages</p>
+<p>custom dir: <code>./nix/python/packages/</code></p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">poetry</span> add <span class="at">--group</span> data <span class="at">-C</span> ./nix/python/packages/</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+</ul>
+<!--listend-->
+<ul>
+<li><p>merge the pyproject.toml from other poetry’s projects</p>
+<p><strong>Notice</strong>: make sure the <code>pyproject.toml</code> under the path vaule.</p></li>
+</ul>
+<!--listend-->
+<div class="sourceCode" id="cb4"><pre class="sourceCode nix code-with-copy"><code class="sourceCode nix"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="op">{</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="va">poetry</span> <span class="op">=</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    l.recursiveUpdate <span class="op">(</span>cell.lib.mergePoetryEnv <span class="op">[</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>      <span class="op">{</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>        <span class="va">path</span> <span class="op">=</span> <span class="ss">./packages</span><span class="op">;</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>      <span class="op">}</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>      <span class="op">{</span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>        <span class="va">path</span> <span class="op">=</span> <span class="st">"</span><span class="sc">${</span>inputs.dataflow2nix<span class="sc">}</span><span class="st">/nix/prefect/packages"</span><span class="op">;</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>        <span class="va">overrides</span> <span class="op">=</span> <span class="cn">false</span><span class="op">;</span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>      <span class="op">}</span></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>      <span class="op">{</span><span class="va">path</span> <span class="op">=</span> <span class="st">"</span><span class="sc">${</span>inputs.desci<span class="sc">}</span><span class="st">/nix/python/packages"</span><span class="op">;}</span></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>    <span class="op">])</span> <span class="op">{</span></span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>      <span class="co"># add your overrides here</span></span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>      <span class="co">#  pyproject = {</span></span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>      <span class="co">#  tool.poetry.dependencies.polars = {</span></span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>      <span class="co">#   version = "^0.15.1";</span></span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>      <span class="co">#   format = "wheel";</span></span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a>      <span class="co"># };</span></span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a>      <span class="co"># };</span></span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a>    <span class="op">};</span></span>
+<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+</section>
+<section id="nix" class="level2">
+<h2 class="anchored" data-anchor-id="nix">Nix</h2>
+<ul>
+<li>std</li>
+</ul>
+<!--listend-->
+<div class="sourceCode" id="cb5"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">std</span> //python/packages/default:build</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li>nix-command <code>sh     nix build .x86_64-linux.python.packages.default --print-build-logs</code></li>
+</ul>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -406,14 +456,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./spiffworkflow.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">spiffworkflow</span>
+      <a href="./prefect-examples.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">prefect-examples</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./prefect.html" class="pagination-link">
-        <span class="nav-page-text">prefect</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->
