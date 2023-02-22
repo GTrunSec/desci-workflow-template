@@ -1,0 +1,17 @@
+[jupyterlab]
+runtimePackages = ["hello"]
+jupyterlabEnvArgs.extraPackages = [
+  "python-lsp-server.passthru.optional-dependencies.all"
+]
+
+[jupyterlab.extensions]
+features = ["lsp", "jupytext"]
+
+[jupyterlab.notebookConfig.ServerApp]
+root_dir = "./docs/notebooks"
+notebook_dir = "./docs/notebooks"
+
+[kernel.python.data-science]
+enable = true
+extraPackages = ["six"]
+groups = []

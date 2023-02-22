@@ -7,15 +7,16 @@
 #+DATE: 2023-02-20 Mon 20:28
 
 
-
 * Poetry
-** cli
+** CLI
 - run *poetry install* with full dependencies
 - https://python-poetry.org/docs/cli/
 
 #+begin_src sh :async :exports both :results output
 poetry install --with data
 #+end_src
+
+- only groups
 
 #+begin_src sh :async :exports both :results output
 poetry install --only data,jupyenv
@@ -66,7 +67,6 @@ poetry add --group data -C ./nix/python/packages/
 }
 #+end_src
 
-
 * Nix
 
 - std
@@ -76,6 +76,6 @@ std //python/packages/default:build
 
 - nix-command
 
-  #+begin_src sh :async :exports both :results output
+#+begin_src sh :async :exports both :results output
 nix build .x86_64-linux.python.packages.default --print-build-logs
-  #+end_src
+#+end_src

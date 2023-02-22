@@ -6,3 +6,5 @@ treefmt.toml
 publish
 /docs/quarto/*.qmd
 !/docs/quarto/index.qmd
+
+/.jupyter/

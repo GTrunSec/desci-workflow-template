@@ -17,4 +17,11 @@
       nix develop .\#generator -c echo generating configFiles
     '';
   };
+
+  buildJupyenv = {
+    description = "generating configFiles with devshell";
+    content = ''
+      nix build .\#x86_64-linux.kernels.packages.jupyenv.config.build --print-build-logs
+    '';
+  };
 }

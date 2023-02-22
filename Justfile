@@ -4,6 +4,10 @@
 # NOTE: Without Nix, you are responsible for having all task dependencies
 # available locally!
 
+# generating configFiles with devshell
+buildJupyenv:
+    nix build .\#x86_64-linux.kernels.packages.jupyenv.config.build --print-build-logs
+
 # Uploads the build to cachix
 cachix-push:
     nix build .\#x86_64-linux.kernels.packages.jupyenv --json | jq -r '.[].outputs | to_entries[].value' | cachix push gtrunsec
