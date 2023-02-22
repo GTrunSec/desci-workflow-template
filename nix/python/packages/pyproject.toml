@@ -11,6 +11,9 @@ python = "^3.10"
 [tool.poetry.group.data.dependencies]
 polars = "^0.16.7"
 
+[tool.poetry.group.prefect.dependencies]
+prefect = { git = "https://github.com/PrefectHQ/prefect" }
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"

@@ -320,11 +320,11 @@
         "tullia": "tullia"
       },
       "locked": {
-        "lastModified": 1676976166,
-        "narHash": "sha256-Fb+wSxOeGP/vwbDf687LiAen1hC3cvAtakn804lHhGE=",
+        "lastModified": 1677055875,
+        "narHash": "sha256-7q+Zi2jYA3SfUk5PWvAD4Bp5tNt7z1Cuxb2+BvGSngo=",
         "owner": "GTrunSec",
         "repo": "DeSci",
-        "rev": "a4fd07ed96f5cfc5a8b7320e54074ccb1496b790",
+        "rev": "c80279eb2ebb3384234ccffd3b391a30ad0edda4",
         "type": "github"
       },
       "original": {
@@ -1432,11 +1432,11 @@
         "rust-overlay": "rust-overlay"
       },
       "locked": {
-        "lastModified": 1676975254,
-        "narHash": "sha256-0GhZhfrH4LYrJOzSL7d1fH0tFQkQjHBIXmKWBamLYoA=",
+        "lastModified": 1677016668,
+        "narHash": "sha256-Z7BqLgEygJWfchhlH2N7o4TaUdP0SO1XXYy0Mfx4e0k=",
         "owner": "gtrunsec",
         "repo": "jupyterWith",
-        "rev": "d09a7b3718c6d38779800cf27881a966cc75b3fe",
+        "rev": "5485af988e79cef616032d698c21711bfbb467ea",
         "type": "github"
       },
       "original": {

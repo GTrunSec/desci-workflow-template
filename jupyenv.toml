@@ -14,4 +14,4 @@ notebook_dir = "./docs/notebooks"
 [kernel.python.data-science]
 enable = true
 extraPackages = ["six"]
-groups = []
+groups = ["data", "prefect"]

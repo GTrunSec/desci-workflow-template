@@ -5,6 +5,10 @@
   inherit (inputs.cells-lab.inputs.xnlib.lib.attrsets) recursiveMerge;
   l = inputs.nixpkgs.lib // builtins;
 in {
+  nixpkgs = inputs.nixpkgs.appendOverlays [
+    inputs.desci.inputs.jupyenv.inputs.poetry2nix.overlay
+  ];
+
   mergePoetryEnv = list: {
     overrides = map (x:
       if (x ? overrides && x.overrides == false)
