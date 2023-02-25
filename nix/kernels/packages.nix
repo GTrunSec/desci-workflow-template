@@ -16,6 +16,11 @@
         (cell.config.resolveKeys pkgs config)
         inputs.desci.kernels.jupyenvModules.quarto
       ];
-      # kernel.python.data-science = inputs.cells.python.config.poetryEnvArgs;
+      kernel.bash.data-science = {
+        runtimePackages = [ inputs.cells.python.packages.default ];
+      };
+      kernel.julia.data-science = {
+        julia = inputs.desci.julia.packages.julia-wrapped;
+      };
     });
 }

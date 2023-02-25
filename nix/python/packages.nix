@@ -10,7 +10,7 @@ in {
   default = nixpkgs.poetry2nix.mkPoetryEnv (
     cell.config.poetryEnvArgs
     // {
-      groups = ["aws" "jupyenv" "data"];
+      groups = ["prefect" "jupyenv" "data"];
     }
   );
 }

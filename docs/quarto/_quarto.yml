@@ -19,6 +19,10 @@ book:
         - prefect-examples.qmd
 
     - part: python.qmd
+      chapters:
+        - prefect-tasks.qmd
+
+
     # - part: DMN.qmd
     #   chapters:
     #     - models.qmd

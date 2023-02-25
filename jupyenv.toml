@@ -1,3 +1,6 @@
+[publishers]
+quarto.enable = true
+
 [jupyterlab]
 runtimePackages = ["hello"]
 jupyterlabEnvArgs.extraPackages = [
@@ -15,3 +18,9 @@ notebook_dir = "./docs/notebooks"
 enable = true
 extraPackages = ["six"]
 groups = ["data", "prefect"]
+
+[kernel.bash.data-science]
+enable = true
+
+[kernel.julia.data-science]
+enable = true

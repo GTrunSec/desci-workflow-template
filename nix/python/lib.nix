@@ -23,7 +23,7 @@ in {
         else l.importTOML "${x.path}/pyproject.toml")
       list);
   };
-  # if x ? pyproject && (l.isAttrs x.pyproject)
-  #      then (l.importTOML "${x.path}/pyproject.toml") // x.pyproject
-  #      else
+  a = l.makeOverridable ({ ... }@attrs: {
+    defaultApp = "d";
+  } // attrs) {};
 }
