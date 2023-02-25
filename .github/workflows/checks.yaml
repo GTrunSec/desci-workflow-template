@@ -16,7 +16,7 @@ jobs:
 
       - uses: nixbuild/nix-quick-install-action@v21
         with:
-          nix_version: "2.13.2"
+          # nix_version: "2.13.2"
           nix_conf: |
             experimental-features = nix-command flakes
             access-tokens = github.com=${{ secrets.GITHUB_TOKEN }}
@@ -29,6 +29,7 @@ jobs:
       - name: Build Doc
         run: nix run .#x86_64-linux.automation.entrypoints.mkdoc --refresh
 
+      - name: Build Quarto
         run: |
           nix develop .#doc --show-trace --refresh  --command mkQuarto
 
