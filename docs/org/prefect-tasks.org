@@ -5,7 +5,7 @@
 #+AUTHOR: GuangTao Zhang
 #+EMAIL: gtrunsec@hardenedlinux.org
 #+DATE: 2023-02-24 Fri 23:13
-
+#+hugo_custom_front_matter: :jupyter python-data-science
 
 * Sequential execution
 
