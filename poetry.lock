@@ -81,14 +81,14 @@ files = [
 
 [[package]]
 name = "apprise"
-version = "1.2.1"
+version = "1.3.0"
 description = "Push Notifications that work with just about every platform!"
 category = "main"
 optional = false
 python-versions = ">=3.6"
 files = [
-    {file = "apprise-1.2.1-py2.py3-none-any.whl", hash = "sha256:679fb5d6232ec7748eef308bda9fe0f0707fa5e48eab247bfde83c3a024a21d1"},
-    {file = "apprise-1.2.1.tar.gz", hash = "sha256:67e0c227eecee260000980dbbf8ba1e5eebdbe494f4730808297c9e645c03579"},
+    {file = "apprise-1.3.0-py2.py3-none-any.whl", hash = "sha256:ef0c1413a32182272b6ed60ddcee6057744dc683725651015332e063b9a6a4ad"},
+    {file = "apprise-1.3.0.tar.gz", hash = "sha256:2c50c19a5dd41317b1f659c52b21a990febe6c15e08464228a1ce8e6098f11bf"},
 ]
 
 [package.dependencies]
@@ -254,18 +254,18 @@ css = ["tinycss2 (>=1.1.0,<1.2)"]
 
 [[package]]
 name = "boto3"
-version = "1.26.76"
+version = "1.26.79"
 description = "The AWS SDK for Python"
 category = "dev"
 optional = false
 python-versions = ">= 3.7"
 files = [
-    {file = "boto3-1.26.76-py3-none-any.whl", hash = "sha256:b4c2969b7677762914394b8273cc1905dfe5b71f250741c1a575487ae357e729"},
-    {file = "boto3-1.26.76.tar.gz", hash = "sha256:30c7d967ed1c6b5a05643e42cae9d4d36c3f1cb6782637ddc7007a104cfd9027"},
+    {file = "boto3-1.26.79-py3-none-any.whl", hash = "sha256:049de631cc03726a14b8eb24ac9ec2a48b0624197796f36166da809fdc9b9a7f"},
+    {file = "boto3-1.26.79.tar.gz", hash = "sha256:73d7bd1f16118ef0dfe936e0420cd76b02d1aedb75330ebda51168458ab752ac"},
 ]
 
 [package.dependencies]
-botocore = ">=1.29.76,<1.30.0"
+botocore = ">=1.29.79,<1.30.0"
 jmespath = ">=0.7.1,<2.0.0"
 s3transfer = ">=0.6.0,<0.7.0"
 
@@ -274,14 +274,14 @@ crt = ["botocore[crt] (>=1.21.0,<2.0a0)"]
 
 [[package]]
 name = "botocore"
-version = "1.29.76"
+version = "1.29.79"
 description = "Low-level, data-driven core of boto 3."
 category = "dev"
 optional = false
 python-versions = ">= 3.7"
 files = [
-    {file = "botocore-1.29.76-py3-none-any.whl", hash = "sha256:70735b00cd529f152992231ca6757e458e5ec25db43767b3526e9a35b2f143b7"},
-    {file = "botocore-1.29.76.tar.gz", hash = "sha256:c2f67b6b3f8acf2968eafca06526f07b9fb0d27bac4c68a635d51abb675134a7"},
+    {file = "botocore-1.29.79-py3-none-any.whl", hash = "sha256:5f254f019e8641f8b2ba6dddc1f7541e8c6d25d976802392710b2fc4bac925b1"},
+    {file = "botocore-1.29.79.tar.gz", hash = "sha256:c7ded44062bed3b928944cfb09e1578ed3fed0e4c98de4f233f3c2056a8d491e"},
 ]
 
 [package.dependencies]
@@ -769,14 +769,14 @@ test = ["anyio[trio] (>=3.2.1,<4.0.0)", "black (==22.10.0)", "coverage[toml] (>=
 
 [[package]]
 name = "fastjsonschema"
-version = "2.16.2"
+version = "2.16.3"
 description = "Fastest Python implementation of JSON schema"
 category = "dev"
 optional = false
 python-versions = "*"
 files = [
-    {file = "fastjsonschema-2.16.2-py3-none-any.whl", hash = "sha256:21f918e8d9a1a4ba9c22e09574ba72267a6762d47822db9add95f6454e51cc1c"},
-    {file = "fastjsonschema-2.16.2.tar.gz", hash = "sha256:01e366f25d9047816fe3d288cbfc3e10541daf0af2044763f3d0ade42476da18"},
+    {file = "fastjsonschema-2.16.3-py3-none-any.whl", hash = "sha256:04fbecc94300436f628517b05741b7ea009506ce8f946d40996567c669318490"},
+    {file = "fastjsonschema-2.16.3.tar.gz", hash = "sha256:4a30d6315a68c253cfa8f963b9697246315aa3db89f98b97235e345dedfb0b8e"},
 ]
 
 [package.extras]
@@ -1853,18 +1853,18 @@ test = ["appdirs (==1.4.4)", "covdefaults (>=2.2.2)", "pytest (>=7.2.1)", "pytes
 
 [[package]]
 name = "polars"
-version = "0.16.7"
+version = "0.16.8"
 description = "Blazingly fast DataFrame library"
 category = "dev"
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "polars-0.16.7-cp37-abi3-macosx_10_7_x86_64.whl", hash = "sha256:89e2d91f4e2425ee95d483e3024b28cf9cbc908887bb821c79c223a696a589e7"},
-    {file = "polars-0.16.7-cp37-abi3-macosx_11_0_arm64.whl", hash = "sha256:0409e0dab3917bac13509634c273987101a490be94a1d3895d21ff0e149701f2"},
-    {file = "polars-0.16.7-cp37-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:6abdc2a0bf522026f4303612f91e5c3d8af8ee22ae4ff10cf186ceb511a33b4a"},
-    {file = "polars-0.16.7-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:2106f522dec88ec552a3f981b1ad3bb304c8537152ea62f576c8ea67999d1e83"},
-    {file = "polars-0.16.7-cp37-abi3-win_amd64.whl", hash = "sha256:3a8410bebc24b2fc0b9c7de7d4a020e6d49434c9f0a09e83adfa952e9dc66c75"},
-    {file = "polars-0.16.7.tar.gz", hash = "sha256:1a17b104d5b1d0248290ef0fb1e8bfa2fbc9ac0a4298b459d7bff6cb87182a89"},
+    {file = "polars-0.16.8-cp37-abi3-macosx_10_7_x86_64.whl", hash = "sha256:424b2b6bca1a89c9b6c1ef4ddfa6f524d5d3a73cc562f7e580e3f3315583ee03"},
+    {file = "polars-0.16.8-cp37-abi3-macosx_11_0_arm64.whl", hash = "sha256:25ce0b18fd9dae3512322e2db9601e51d2af8b2b59b9c49bc6adf967b79701cc"},
+    {file = "polars-0.16.8-cp37-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:7a247c0ce59562ee412e684ea999ddc004213fe2acf30753340b662fb6609041"},
+    {file = "polars-0.16.8-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:0f33951b5cf78c0c0aace868838ee573bc0422985d73be869a84867731a1c1f1"},
+    {file = "polars-0.16.8-cp37-abi3-win_amd64.whl", hash = "sha256:f85c7a3753af0f59ce18641446efdc2d3f85eaa9a9d232232061faafa02f87b9"},
+    {file = "polars-0.16.8.tar.gz", hash = "sha256:da306f9049afd11ad3c190cccf10fea4497cb413812c02bc774c60934aa679f4"},
 ]
 
 [package.dependencies]
@@ -1884,13 +1884,15 @@ xlsx2csv = ["xlsx2csv (>=0.8.0)"]
 
 [[package]]
 name = "prefect"
-version = "2.8.2+15.g62c8a59e45"
+version = "2.8.3"
 description = "Workflow orchestration and management."
 category = "dev"
 optional = false
 python-versions = ">=3.7"
-files = []
-develop = false
+files = [
+    {file = "prefect-2.8.3-py3-none-any.whl", hash = "sha256:44e678818ca69917e7c22ca7c0053a48a89c379887c60470ad5ac86e8eede012"},
+    {file = "prefect-2.8.3.tar.gz", hash = "sha256:9abe382ac37305ddf28d256c488771505db402617ef478a6faa9d0f9fed74ff7"},
+]
 
 [package.dependencies]
 aiosqlite = ">=0.17.0"
@@ -1927,18 +1929,12 @@ rich = ">=11.0"
 sqlalchemy = {version = ">=1.4.22,<1.4.33 || >1.4.33,<2.0", extras = ["asyncio"]}
 toml = ">=0.10.0"
 typer = ">=0.4.2"
-typing_extensions = ">=4.1.0"
+typing-extensions = ">=4.1.0"
 uvicorn = ">=0.14.0"
 websockets = ">=10.4"
 
 [package.extras]
 dev = ["autoflake8", "cairosvg", "flake8", "flaky", "ipython", "jinja2", "mike", "mkdocs", "mkdocs-gen-files", "mkdocs-material", "mkdocstrings-python", "mock", "moto", "mypy", "numpy", "pillow", "pre-commit", "pytest (>7)", "pytest-asyncio (>=0.18.2)", "pytest-benchmark", "pytest-cov", "pytest-env", "pytest-timeout", "pytest-xdist", "pytkdocs (>=0.14.2)", "pyyaml", "requests", "respx", "setuptools (!=60.9.0)", "virtualenv", "watchfiles"]
-
-[package.source]
-type = "git"
-url = "https://github.com/PrefectHQ/prefect"
-reference = "HEAD"
-resolved_reference = "62c8a59e45561ed5194f1451934f0af0afbd9aba"
 
 [[package]]
 name = "prefect-aws"
@@ -1964,7 +1960,7 @@ dev = ["black", "boto3-stubs (>=1.24.39)", "coverage", "flake8", "interrogate", 
 type = "git"
 url = "https://github.com/PrefectHQ/prefect-aws"
 reference = "HEAD"
-resolved_reference = "7a17997de8a61ad977549ed77e0ca6f669492d31"
+resolved_reference = "865b0930382f22b0f8e8ffb794519566f1da6832"
 
 [[package]]
 name = "prefect-jupyter"
@@ -1989,7 +1985,7 @@ dev = ["black", "coverage", "flake8", "interrogate", "isort", "mkdocs", "mkdocs-
 type = "git"
 url = "https://github.com/PrefectHQ/prefect-jupyter"
 reference = "HEAD"
-resolved_reference = "31c8f2310c7bf51dc18be005e6c49fa90a04f946"
+resolved_reference = "895120648cfcc33ab8ad675bf3a82d73b6f4bb87"
 
 [[package]]
 name = "prompt-toolkit"
@@ -2221,14 +2217,14 @@ six = ">=1.5"
 
 [[package]]
 name = "python-slugify"
-version = "8.0.0"
+version = "8.0.1"
 description = "A Python slugify application that also handles Unicode"
 category = "main"
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "python-slugify-8.0.0.tar.gz", hash = "sha256:f1da83f3c7ab839b3f84543470cd95bdb5a81f1a0b80fed502f78b7dca256062"},
-    {file = "python_slugify-8.0.0-py2.py3-none-any.whl", hash = "sha256:51f217508df20a6c166c7821683384b998560adcf8f19a6c2ca8b460528ccd9c"},
+    {file = "python-slugify-8.0.1.tar.gz", hash = "sha256:ce0d46ddb668b3be82f4ed5e503dbc33dd815d83e2eb6824211310d3fb172a27"},
+    {file = "python_slugify-8.0.1-py2.py3-none-any.whl", hash = "sha256:70ca6ea68fe63ecc8fa4fcf00ae651fc8a5d02d93dcd12ae6d4fc7ca46c4d395"},
 ]
 
 [package.dependencies]
@@ -3194,4 +3190,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "7de83883ad365a2961081a112858f2225a9a837b5381306697fe10157d2f95c8"
+content-hash = "02c00aa651b721f1956f141c71f1c0713564d4f59b0e5383e72530e164b482b7"

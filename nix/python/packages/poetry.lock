@@ -1185,13 +1185,15 @@ xlsx2csv = ["xlsx2csv (>=0.8.0)"]
 
 [[package]]
 name = "prefect"
-version = "2.8.2+15.g62c8a59e45"
+version = "2.8.3"
 description = "Workflow orchestration and management."
 category = "dev"
 optional = false
 python-versions = ">=3.7"
-files = []
-develop = false
+files = [
+    {file = "prefect-2.8.3-py3-none-any.whl", hash = "sha256:44e678818ca69917e7c22ca7c0053a48a89c379887c60470ad5ac86e8eede012"},
+    {file = "prefect-2.8.3.tar.gz", hash = "sha256:9abe382ac37305ddf28d256c488771505db402617ef478a6faa9d0f9fed74ff7"},
+]
 
 [package.dependencies]
 aiosqlite = ">=0.17.0"
@@ -1228,18 +1230,12 @@ rich = ">=11.0"
 sqlalchemy = {version = ">=1.4.22,<1.4.33 || >1.4.33,<2.0", extras = ["asyncio"]}
 toml = ">=0.10.0"
 typer = ">=0.4.2"
-typing_extensions = ">=4.1.0"
+typing-extensions = ">=4.1.0"
 uvicorn = ">=0.14.0"
 websockets = ">=10.4"
 
 [package.extras]
 dev = ["autoflake8", "cairosvg", "flake8", "flaky", "ipython", "jinja2", "mike", "mkdocs", "mkdocs-gen-files", "mkdocs-material", "mkdocstrings-python", "mock", "moto", "mypy", "numpy", "pillow", "pre-commit", "pytest (>7)", "pytest-asyncio (>=0.18.2)", "pytest-benchmark", "pytest-cov", "pytest-env", "pytest-timeout", "pytest-xdist", "pytkdocs (>=0.14.2)", "pyyaml", "requests", "respx", "setuptools (!=60.9.0)", "virtualenv", "watchfiles"]
-
-[package.source]
-type = "git"
-url = "https://github.com/PrefectHQ/prefect"
-reference = "HEAD"
-resolved_reference = "62c8a59e45561ed5194f1451934f0af0afbd9aba"
 
 [[package]]
 name = "pyasn1"
@@ -2095,4 +2091,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "f4eca76f6a215fd6c1c8a1ac12a803f54639582cc9adaa1e70c80cd7177e0aee"
+content-hash = "718ba0e8e92b34f9a41eff40c844ad1d540805c0d4b2c0d8950e1f3cee06ed49"

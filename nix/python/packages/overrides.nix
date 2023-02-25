@@ -7,3 +7,4 @@ final: prev: let
 in
   {}
   // addNativeBuildInputs "prefect-aws" [final.prefect]
+  // addNativeBuildInputs "prefect-jupyter" [final.prefect]

@@ -12,7 +12,7 @@ python = "^3.10"
 polars = "^0.16.7"
 
 [tool.poetry.group.prefect.dependencies]
-prefect = { git = "https://github.com/PrefectHQ/prefect" }
+prefect = "^2.8.3"
 
 [build-system]
 requires = ["poetry-core"]

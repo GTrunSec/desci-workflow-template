@@ -75,5 +75,5 @@ ipywidgets = "^8.0.2"
 [tool.poetry.group.jupyter.dependencies.prefect-jupyter]
 git = "https://github.com/PrefectHQ/prefect-jupyter"
 
-[tool.poetry.group.prefect.dependencies.prefect]
-git = "https://github.com/PrefectHQ/prefect"
+[tool.poetry.group.prefect.dependencies]
+prefect = "^2.8.3"
