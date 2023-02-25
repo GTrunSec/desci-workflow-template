@@ -23,7 +23,9 @@ in {
         else l.importTOML "${x.path}/pyproject.toml")
       list);
   };
-  a = l.makeOverridable ({ ... }@attrs: {
-    defaultApp = "d";
-  } // attrs) {};
+  a = l.makeOverridable ({...} @ attrs:
+    {
+      defaultApp = "d";
+    }
+    // attrs) {};
 }

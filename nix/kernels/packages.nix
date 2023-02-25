@@ -17,7 +17,7 @@
         inputs.desci.kernels.jupyenvModules.quarto
       ];
       kernel.bash.data-science = {
-        runtimePackages = [ inputs.cells.python.packages.default ];
+        runtimePackages = [inputs.cells.python.packages.default];
       };
       kernel.julia.data-science = {
         julia = inputs.desci.julia.packages.julia-wrapped;

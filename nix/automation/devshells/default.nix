@@ -35,7 +35,8 @@ in
         {
           name = "mkQuarto";
           command = ''
-            ${l.getExe (inputs.desci.quarto.lib.orgToQuarto
+            ${l.getExe (
+              inputs.desci.quarto.lib.orgToQuarto
               inputs.cells.kernels.packages.jupyenv
             )} "$PRJ_ROOT"/docs/publish/content/posts
           '';

@@ -4,5 +4,6 @@ final: prev: let
       nativeBuildInputs = (old.nativeBuildInputs or []) ++ inputs;
     });
   };
-in {}
-// addNativeBuildInputs "prefect-aws" [final.prefect]
+in
+  {}
+  // addNativeBuildInputs "prefect-aws" [final.prefect]
