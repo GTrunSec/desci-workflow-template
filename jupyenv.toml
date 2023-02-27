@@ -25,14 +25,14 @@ enable = true
 [kernel.julia.data-science]
 enable = true
 
-[kernel.r.data-science]
-# enable = true
-extraRPackages = [
-  "dplyr",
-  "ggplot2",
-  "lubridate",
-  "readr",
-  "rmarkdown",
-  "ggrepel",
-  "tidyr"
-]
+# [kernel.r.data-science]
+#  enable = true
+# extraRPackages = [
+#   "dplyr",
+#   "ggplot2",
+#   "lubridate",
+#   "readr",
+#   "rmarkdown",
+#   "ggrepel",
+#   "tidyr"
+# ]
