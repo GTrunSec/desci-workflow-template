@@ -8,7 +8,8 @@ lang: en
 ## Users (without Nix background)
 
 - pull Images
-```
+
+```bash
 docker pull ghcr.io/gtrunsec/workflow-template.desci
 ```
 
@@ -23,7 +24,7 @@ docker run -it -p 8888:8888 -v "$(pwd):/work" -v "/etc/localtime:/etc/localtime"
 
 ### Commands Menu
 
-- show menu
+- show devshell menu
 
 ```bash
 menu
@@ -33,7 +34,7 @@ menu
 
 
 ```bash
-jupyenv lab --ip 0.0.0.0 --port 8888
+jupyenv -- lab --ip 0.0.0.0 --port 8888
 ```
 
 

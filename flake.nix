@@ -7,7 +7,6 @@
     std.follows = "desci/std";
     std-data-collection.follows = "desci/std-data-collection";
     dataflow2nix.follows = "desci/dataflow2nix";
-    hasktorch.url = "github:hasktorch/hasktorch";
     # dataflow2nix.url = "/home/guangtao/ghq/github.com/GTrunSec/dataflow2nix";
   };
 
