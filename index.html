@@ -269,14 +269,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ul>
 <li>pull Images</li>
 </ul>
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">docker</span> pull ghcr.io/gtrunsec/workflow-template.desci</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">docker</span> pull ghcr.io/gtrunsec/workflow-template.default</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ul>
 <li>Enter the devshell with dockerImages</li>
 </ul>
 <div class="sourceCode" id="cb2"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone https://github.com/GTrunSec/workflow-template.git</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> workflow-template</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="ex">docker</span> run <span class="at">-it</span> <span class="at">-p</span> 8888:8888 <span class="at">-v</span> <span class="st">"</span><span class="va">$(</span><span class="bu">pwd</span><span class="va">)</span><span class="st">:/work"</span> <span class="at">-v</span> <span class="st">"/etc/localtime:/etc/localtime"</span> <span class="at">--entrypoint</span> /bin/bash ghcr.io/gtrunsec/workflow-template.desci</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="ex">docker</span> run <span class="at">-it</span> <span class="at">-p</span> 8888:8888 <span class="at">-v</span> <span class="st">"</span><span class="va">$(</span><span class="bu">pwd</span><span class="va">)</span><span class="st">:/work"</span> <span class="at">-v</span> <span class="st">"/etc/localtime:/etc/localtime"</span> <span class="at">--entrypoint</span> /bin/bash ghcr.io/gtrunsec/workflow-template.default</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <section id="commands-menu" class="level3">
 <h3 class="anchored" data-anchor-id="commands-menu">Commands Menu</h3>
 <ul>
