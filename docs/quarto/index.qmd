@@ -10,7 +10,7 @@ lang: en
 - pull Images
 
 ```bash
-docker pull ghcr.io/gtrunsec/workflow-template.desci
+docker pull ghcr.io/gtrunsec/workflow-template.default
 ```
 
 - Enter the devshell with dockerImages
@@ -19,7 +19,7 @@ docker pull ghcr.io/gtrunsec/workflow-template.desci
 git clone https://github.com/GTrunSec/workflow-template.git
 cd workflow-template
 
-docker run -it -p 8888:8888 -v "$(pwd):/work" -v "/etc/localtime:/etc/localtime" --entrypoint /bin/bash ghcr.io/gtrunsec/workflow-template.desci
+docker run -it -p 8888:8888 -v "$(pwd):/work" -v "/etc/localtime:/etc/localtime" --entrypoint /bin/bash ghcr.io/gtrunsec/workflow-template.default
 ```
 
 ### Commands Menu
