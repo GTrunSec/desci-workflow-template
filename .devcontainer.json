@@ -1,0 +1,6 @@
+{
+    "image": "ghcr.io/gtrunsec/workflow-templates.default",
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+    }
+}

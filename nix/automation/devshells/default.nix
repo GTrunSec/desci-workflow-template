@@ -13,6 +13,8 @@ in
         inputs.std.std.devshellProfiles.default
 
         inputs.cells-lab.automation.devshellProfiles.docs
+
+        inputs.cells.kernels.devshellProfiles.default
       ];
 
       commands = [

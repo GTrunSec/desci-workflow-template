@@ -4,3 +4,40 @@ lang: en
 
 # Getting Started {.unnumbered}
 
+
+## Users (without Nix background)
+
+- pull Images
+```
+docker pull ghcr.io/gtrunsec/workflow-template.desci
+```
+
+- Enter the devshell with dockerImages
+
+```sh
+git clone https://github.com/GTrunSec/workflow-template.git
+cd workflow-template
+
+docker run -it -p 8888:8888 -v "$(pwd):/work" -v "/etc/localtime:/etc/localtime" --entrypoint /bin/bash ghcr.io/gtrunsec/workflow-template.desci
+```
+
+### Commands Menu
+
+- show menu
+
+```bash
+menu
+```
+
+- run `jupyterlab` with `jupyenv` (docker reuqired port-forward flag)
+
+
+```bash
+jupyenv lab --ip 0.0.0.0 --port 8888
+```
+
+
+## Add custom packages
+
+
+### [Python](https://gtrunsec.github.io/workflow-template/python.html)

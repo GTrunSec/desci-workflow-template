@@ -1,0 +1,38 @@
+
+name: "DockerImages"
+on:
+  push:
+    branches: [main]
+  pull_request:
+jobs:
+  nix-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3.3.0
+        with:
+          fetch-depth: 0
+
+      - uses: nixbuild/nix-quick-install-action@v21
+        with:
+          nix_conf: |
+            experimental-features = nix-command flakes
+            access-tokens = github.com=${{ secrets.GITHUB_TOKEN }}
+
+      - uses: cachix/cachix-action@v11
+        with:
+          name: zeek
+
+      - uses: docker/login-action@v2
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build workflow.desci Image
+        run: |
+          nix -Lv run .\#x86_64-linux.automation.containers.dev.copyToDockerDaemon
+
+      - name: Push the workflow.default Docker image
+        run: |
+          # docker run -it -v "$(pwd):/work" --entrypoint /bin/bash ghcr.io/gtrunsec/workflow-template.default:latest
+          docker push ghcr.io/gtrunsec/workflow-template.default:latest
