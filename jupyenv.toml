@@ -4,7 +4,7 @@ quarto.enable = true
 [jupyterlab]
 runtimePackages = ["hello"]
 jupyterlabEnvArgs.extraPackages = [
- "python-lsp-server.passthru.optional-dependencies.all"
+  "python-lsp-server.passthru.optional-dependencies.all"
 ]
 
 [jupyterlab.extensions]
@@ -24,3 +24,15 @@ enable = true
 
 [kernel.julia.data-science]
 enable = true
+
+[kernel.r.data-science]
+# enable = true
+extraRPackages = [
+  "dplyr",
+  "ggplot2",
+  "lubridate",
+  "readr",
+  "rmarkdown",
+  "ggrepel",
+  "tidyr"
+]

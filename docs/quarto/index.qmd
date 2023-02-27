@@ -38,7 +38,8 @@ jupyenv -- lab --ip 0.0.0.0 --port 8888
 ```
 
 
-## Add custom packages
+## Add custom packages or settings
 
+without special packages or settings, we can simple change the `jupyenv.toml` with the desired values, if you changed `pyproejct.tmol`, after that run `direnv reload`.
 
 ### [Python](https://gtrunsec.github.io/workflow-template/python.html)
