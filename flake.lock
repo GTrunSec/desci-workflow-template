@@ -256,11 +256,11 @@
         "tullia": "tullia"
       },
       "locked": {
-        "lastModified": 1679126993,
-        "narHash": "sha256-NkIMvShb5xmJ68CTBKtm7MqJlhJnh2V6SdUiHWeJSAY=",
+        "lastModified": 1679127781,
+        "narHash": "sha256-/y7SaOT7uVOapqMjuCmVbzQgyWYH6g7260vr+BzyFPs=",
         "owner": "GTrunSec",
         "repo": "DeSci",
-        "rev": "4e5b623fa22424ac03c3ff2906db756819ac07da",
+        "rev": "60063f6e936ea4ebda249624fccb510a8dd88528",
         "type": "github"
       },
       "original": {
