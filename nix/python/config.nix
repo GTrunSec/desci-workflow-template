@@ -12,7 +12,8 @@ in {
     poetrylock = (std.incl self ["poetry.lock"]) + "/poetry.lock";
     pyproject = cell.nixago.pyproject.configFile;
     preferWheels = true;
-    overrides =
+    groups = [];
+     overrides =
       # Do not add poetry2nix.overrides if you have merged other overrides;
       # (nixpkgs.poetry2nix.overrides.withDefaults (import ./packages/overrides.nix))
       [(import ./packages/overrides.nix)]

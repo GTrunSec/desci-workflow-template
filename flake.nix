@@ -3,10 +3,14 @@
     nixpkgs.follows = "desci/nixpkgs";
     # desci.url = "/home/guangtao/ghq/github.com/GTrunSec/DeSci";
     desci.url = "github:GTrunSec/DeSci";
+    # desci.inputs.jupyenv.follows = "jupyenv";
     cells-lab.follows = "desci/cells-lab";
     std.follows = "desci/std";
+    xnlib.url = "/home/guangtao/ghq/github.com/GTrunSec/xnlib";
     std-data-collection.follows = "desci/std-data-collection";
     dataflow2nix.follows = "desci/dataflow2nix";
+    jupyenv.url = "/home/guangtao/ghq/github.com/tweag/jupyterWith";
+    # jupyenv.url = "github:tweag/jupyenv?ref=pull/437/head";
     # dataflow2nix.url = "/home/guangtao/ghq/github.com/GTrunSec/dataflow2nix";
   };
 

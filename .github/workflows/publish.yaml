@@ -30,9 +30,9 @@ jobs:
 
       - name: Build workflow.desci Image
         run: |
-          nix -Lv run .\#x86_64-linux.automation.containers.dev.copyToDockerDaemon
+          nix -Lv run .\#x86_64-linux.automation.containers.dev.copyToRegistry
 
       - name: Push the workflow.default Docker image
         run: |
           # docker run -it -v "$(pwd):/work" --entrypoint /bin/bash ghcr.io/gtrunsec/workflow-template.default:latest
-          docker push ghcr.io/gtrunsec/workflow-template.default:latest
+          # docker push ghcr.io/gtrunsec/workflow-template.default:latest
