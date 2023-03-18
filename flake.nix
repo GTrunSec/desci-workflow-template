@@ -9,7 +9,6 @@
     xnlib.url = "/home/guangtao/ghq/github.com/GTrunSec/xnlib";
     std-data-collection.follows = "desci/std-data-collection";
     dataflow2nix.follows = "desci/dataflow2nix";
-    jupyenv.url = "/home/guangtao/ghq/github.com/tweag/jupyterWith";
     # jupyenv.url = "github:tweag/jupyenv?ref=pull/437/head";
     # dataflow2nix.url = "/home/guangtao/ghq/github.com/GTrunSec/dataflow2nix";
   };
