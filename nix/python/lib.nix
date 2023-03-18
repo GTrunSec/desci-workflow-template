@@ -2,7 +2,7 @@
   inputs,
   cell,
 }: let
-  inherit (inputs.cells-lab.inputs.xnlib.lib.attrsets) recursiveMerge;
+  inherit (inputs.std-ext.lib.lib.attrsets) recursiveMerge;
   l = inputs.nixpkgs.lib // builtins;
 in {
   nixpkgs = inputs.nixpkgs.appendOverlays [

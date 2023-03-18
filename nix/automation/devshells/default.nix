@@ -12,7 +12,7 @@ in
       imports = [
         inputs.std.std.devshellProfiles.default
 
-        inputs.cells-lab.automation.devshellProfiles.docs
+        inputs.std-ext.automation.devshellProfiles.docs
 
         inputs.cells.kernels.devshellProfiles.default
       ];
@@ -46,7 +46,7 @@ in
         }
       ];
       imports = [
-        inputs.cells-lab.automation.devshellProfiles.docs
+        inputs.std-ext.automation.devshellProfiles.docs
       ];
     };
   }

@@ -3,7 +3,7 @@
   cell,
 }: let
   inherit (inputs) self std;
-  inherit (inputs.cells-lab.inputs.xnlib.lib.attrsets) recursiveMerge;
+  inherit (inputs.std-ext.lib.lib.attrsets) recursiveMerge;
   l = inputs.nixpkgs.lib // builtins;
 
   nixpkgs = inputs.dataflow2nix.prefect.lib.nixpkgs;

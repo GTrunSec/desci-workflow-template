@@ -4,9 +4,8 @@
     # desci.url = "/home/guangtao/ghq/github.com/GTrunSec/DeSci";
     desci.url = "github:GTrunSec/DeSci";
     # desci.inputs.jupyenv.follows = "jupyenv";
-    cells-lab.follows = "desci/cells-lab";
+    std-ext.follows = "desci/std-ext";
     std.follows = "desci/std";
-    xnlib.url = "/home/guangtao/ghq/github.com/GTrunSec/xnlib";
     std-data-collection.follows = "desci/std-data-collection";
     dataflow2nix.follows = "desci/dataflow2nix";
     # jupyenv.url = "github:tweag/jupyenv?ref=pull/437/head";
@@ -41,7 +40,7 @@
       devShells = inputs.std.harvest inputs.self ["automation" "devshells"];
     } {
       process-compose =
-        inputs.cells-lab.lib.mkProcessCompose ["composeJobs" "oci-images"]
+        inputs.std-ext.lib.mkProcessCompose ["composeJobs" "oci-images"]
         self {
           log_location = "$HOME/.cache/process-compose.log";
         };
