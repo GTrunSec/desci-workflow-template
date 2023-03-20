@@ -20,7 +20,11 @@ in {
   default = nixpkgs.poetry2nix.mkPoetryEnv (
     cell.config.poetryEnvArgs
     // {
-      groups = ["prefect" "jupyter" "aws" "jupyenv" "data"];
+      extraPackages = ps: [
+        ps.python-lsp-server
+        ps.python-lsp-server.passthru.optional-dependencies.all
+      ];
+      groups = ["prefect" "aws" "data"];
     }
   );
 }

@@ -16,6 +16,12 @@ in {
         help = "Run wrapped jupyenv";
       }
       {
+        name = "jupyter";
+        command = ''
+          2>/dev/null ${inputs.cells.kernels.packages.jupyenv.config.build}/bin/jupyter "$@"
+        '';
+      }
+      {
         name = "quarto";
         command = ''
           ${l.getExe cell.packages.jupyenv.config.quartoEnv} "$@"

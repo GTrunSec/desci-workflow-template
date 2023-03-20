@@ -14,10 +14,10 @@ features = ["lsp", "jupytext"]
 root_dir = "./docs/notebooks"
 notebook_dir = "./docs/notebooks"
 
-[kernel.python.data-science]
+[kernel.python.data]
 enable = true
 extraPackages = ["six"]
-groups = ["data", "prefect"]
+groups = ["data", "prefect", "jupyenv"]
 
 [kernel.bash.data-science]
 enable = true

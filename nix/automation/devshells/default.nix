@@ -29,6 +29,10 @@ in
           cell.nixago.just
         ]
         ++ l.attrValues inputs.cells.python.nixago;
+
+      packages = [
+        inputs.cells.python.packages.default
+      ];
     };
 
     doc = {
